@@ -37,11 +37,19 @@
   <build>
     <plugins>
       <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.11.0</version> <!-- Add version here if not already -->
         <configuration>
-          <source>17</source>
+          <source>17</source> <!-- or 21 if you're on Java 21 -->
           <target>17</target>
         </configuration>
+      </plugin>
+
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-war-plugin</artifactId>
+        <version>3.4.0</version>
       </plugin>
 
       <plugin>
